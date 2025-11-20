@@ -6,10 +6,14 @@ endpoints:
       apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
-        default: ["openai/gpt-4o-mini"]
+        default: ["gpt-3.5-turbo"]
         fetch: true
+      titleConvo: true
+      titleModel: "current_model"
+      summarize: false
+      summaryModel: "current_model"
+      forcePrompt: false
       modelDisplayLabel: "OpenRouter"
-
 memory:
   disabled: false
   personalize: true

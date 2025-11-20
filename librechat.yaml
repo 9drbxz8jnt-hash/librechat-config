@@ -3,7 +3,7 @@ cache: true
 endpoints:
   custom:
     - name: "OpenRouter"
-      apiKey: "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"
+      apiKey: "${OPENROUTER_KEY}"
       baseURL: "https://openrouter.ai/api/v1"
       models:
         default: ["openai/gpt-4o-mini"]

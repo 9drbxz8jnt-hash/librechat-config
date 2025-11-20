@@ -1,0 +1,22 @@
+version: 1.2.8
+cache: true
+
+endpoints:
+  custom:
+    - name: "OpenRouter"
+      apiKey: "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"
+      baseURL: "https://openrouter.ai/api/v1"
+      models:
+        default: ["openai/gpt-4o-mini"]
+        fetch: true
+      modelDisplayLabel: "OpenRouter"
+
+memory:
+  disabled: false
+  personalize: true
+  tokenLimit: 2000
+  messageWindowSize: 5
+  agent:
+    provider: "openAI"
+    model: "gpt-4.1-mini"
+    instructions: "You are a memory agent that stores and retrieves user preferences and personal facts to personalize future conversations."
